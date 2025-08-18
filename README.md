@@ -1,74 +1,57 @@
 # 🏭 OSM - One Smart Mate Landing Page
 
-Landing page profesional para el software de mantenimiento autónomo industrial OSM (One Smart Mate), especializado en metodologías TPM, CILT y OPL.
+Professional landing page for the OSM (One Smart Mate) industrial autonomous maintenance software, specialized in TPM, CILT, and OPL methodologies.
 
-## ✨ Características
+## ✨ Features
 
-- **Diseño Moderno**: Landing page responsive con animaciones de scroll reveal
-- **Metodología TPM**: Sección educativa sobre los 8 pilares del TPM
-- **Tecnología Avanzada**: Tailwind CSS con variables personalizadas
-- **Animaciones Suaves**: Efectos de aparición con Intersection Observer API
-- **Optimizado**: Performance optimizada sin afectar la experiencia de usuario
+- **Modern Design**: Responsive landing page with scroll reveal animations
+- **TPM Methodology**: Educational section about the 8 pillars of TPM
+- **Advanced Technology**: Tailwind CSS with custom variables
+- **Smooth Animations**: Appearance effects with Intersection Observer API
+- **Optimized**: Performance optimized without affecting user experience
 
-## 🚀 Tecnologías Utilizadas
+## 🚀 Technologies Used
 
-- **HTML5** - Estructura semántica
-- **Tailwind CSS v4** - Framework CSS con variables `@theme`
-- **JavaScript ES6+** - Funcionalidades interactivas
-- **Inter Font** - Tipografía moderna y legible
-- **SVG Icons** - Iconografía vectorial escalable
+- **HTML5** - Semantic structure
+- **Tailwind CSS v4** - CSS framework with `@theme` variables
+- **JavaScript ES6+** - Interactive functionalities
+- **Inter Font** - Modern and readable typography
+- **SVG Icons** - Scalable vector iconography
 
-## 📁 Estructura del Proyecto
+## 🛠️ Installation and Development
 
-```
-.landingOSM/
-├── index.html              # Página principal
-├── src/
-│   ├── input.css           # Estilos Tailwind con variables personalizadas
-│   └── output.css          # CSS compilado (generado automáticamente)
-├── fonts/
-│   └── inter/              # Fuente Inter (variable font)
-├── img/                    # Imágenes SVG de undraw.co
-├── ejemplos/               # Ejemplos de landing pages de referencia
-├── AntiguaLanding/         # Landing page anterior
-├── .gitignore              # Archivos excluidos de Git
-└── README.md               # Este archivo
-```
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm or yarn
 
-## 🛠️ Instalación y Desarrollo
-
-### Prerrequisitos
-- Node.js (versión 14 o superior)
-- npm o yarn
-
-### Instalación
+### Installation
 ```bash
-# Clonar el repositorio
-git clone <tu-repositorio>
+# Clone the repository
+git clone <your-repository>
 cd .landingOSM
 
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Compilar CSS (desarrollo)
+# Compile CSS (development)
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 
-# Compilar CSS (producción)
+# Compile CSS (production)
 npx tailwindcss -i ./src/input.css -o ./src/output.css --minify
 ```
 
-### Desarrollo Local
+### Local Development
 ```bash
-# Iniciar servidor de desarrollo (opcional)
+# Start development server (optional)
 npx serve .
 
-# O simplemente abrir index.html en el navegador
+# Or simply open index.html in the browser
 ```
 
-## 🎨 Personalización
+## 🎨 Customization
 
-### Colores Principales
-Los colores están definidos en `src/input.css` usando variables CSS:
+### Primary Colors
+Colors are defined in `src/input.css` using CSS variables:
 
 ```css
 --color-primary: #4C5B91;
@@ -76,73 +59,53 @@ Los colores están definidos en `src/input.css` usando variables CSS:
 --color-white: #ffffff;
 ```
 
-### Fuentes
-- **Inter Variable Font**: Fuente principal con soporte completo para acentos
-- Configurada para pesos de 100 a 900
+### Fonts
+- **Inter Variable Font**: Main font with complete accent support
+- Configured for weights from 100 to 900
 
-### Animaciones
-- **Scroll Reveal**: Aparición suave de secciones al hacer scroll
-- **Staggered Animations**: Efectos escalonados para elementos múltiples
-- **Hover Effects**: Interacciones sutiles en botones y tarjetas
+### Animations
+- **Scroll Reveal**: Smooth appearance of sections when scrolling
+- **Staggered Animations**: Staggered effects for multiple elements
+- **Hover Effects**: Subtle interactions on buttons and cards
 
-## 📱 Secciones de la Landing
+## 📱 Landing Page Sections
 
-1. **Hero Section** - Introducción impactante
-2. **Stats** - Métricas clave de la industria
-3. **Features** - 4 pasos principales del proceso
-4. **AM (Mantenimiento Autónomo)** - Metodología TPM
+1. **Hero Section** - Impactful introduction
+2. **Stats** - Key industry metrics
+3. **Features** - 4 main process steps
+4. **AM (Autonomous Maintenance)** - TPM methodology
 5. **CILT** - Cleaning, Inspection, Lubrication, Tightening
 6. **OPL** - One Point Lessons
-7. **Benefits** - Transformación industrial
-8. **Technology** - Capacidades técnicas reales
-9. **TPM Methodology** - Los 8 pilares del TPM
-10. **Contact** - Información de contacto
+7. **Benefits** - Industrial transformation
+8. **Technology** - Real technical capabilities
+9. **TPM Methodology** - The 8 pillars of TPM
 
-## 🔧 Configuración de Producción
+## 🔧 Production Configuration
 
-### Optimización
+### Optimization
 ```bash
-# Compilar CSS optimizado para producción
+# Compile optimized CSS for production
 npx tailwindcss -i ./src/input.css -o ./src/output.css --minify
 
-# Verificar tamaño del bundle
+# Check bundle size
 ls -la src/output.css
 ```
 
-### Despliegue
-La landing page es estática y puede desplegarse en:
-- GitHub Pages
-- Netlify
-- Vercel
-- Cualquier servidor web estático
-
 ## 📊 Performance
 
-- **Lighthouse Score**: Optimizado para rendimiento
+- **Lighthouse Score**: Optimized for performance
 - **First Contentful Paint**: < 1.5s
 - **Largest Contentful Paint**: < 2.5s
 - **Cumulative Layout Shift**: < 0.1
 
-## 🤝 Contribución
+## 🤝 Contributing
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
-
-## 📞 Contacto
-
-**One Smart Mate** - Tu compañero inteligente para el mantenimiento autónomo industrial.
-
-- **Email**: [tu-email@ejemplo.com]
-- **WhatsApp**: [tu-número]
-- **Sitio Web**: [tu-sitio-web]
+1. Fork the project
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-Desarrollado con ❤️ para revolucionar el mantenimiento industrial.
+Developed with ❤️ to revolutionize industrial maintenance.
